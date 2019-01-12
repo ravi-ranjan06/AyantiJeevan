@@ -321,7 +321,7 @@ $countryList    = $register->jd($register->getCountryList());
                 <div class="footer">
                     <div class="pull-right">
                         <ul class="list-inline">
-                            <li><a title="" href="index.html"><span class="text-info"><b>Home</b></span></a></li>
+                            <li><a title="" href="index"><span class="text-info"><b>Home</b></span></a></li>
                             <li><a title="" href="mailbox.html"><span class="text-info"> <b>login</b> </span></a></li>
                             <!-- <li><a title="" href="blog.html">Contactus</a></li> -->
                         </ul>

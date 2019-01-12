@@ -9,7 +9,13 @@ $(function (){
 		minimumResultsForSearch: ''
     });
 
-    $('#dob').daterangepicker();
+    /*$('input[name="dob"]').daterangepicker({
+    	showOtherMonths: true,
+		selectOtherMonths: true,
+		numberOfMonths: 1,
+		dateFormat:"mm-dd-yy",
+		maxDate:0
+    });*/
 });
 
 function selectState(val)
@@ -127,5 +133,5 @@ function selectCity(val)
 
 function validateMe()
 {
-
+489375
 }

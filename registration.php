@@ -20,6 +20,8 @@ $countryList    = $register->jd($register->getCountryList());
 <link href="<?php echo BASE_URL; ?>assets/css/morris.css" rel="stylesheet">
 <!-- Bootstrap -->
 <link href="<?php echo BASE_URL; ?>assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css" />
 <!-- slimscroll -->
 <link href="<?php echo BASE_URL; ?>assets/css/jquery.slimscroll.css" rel="stylesheet">
 <!-- Fontes -->
@@ -40,7 +42,6 @@ $countryList    = $register->jd($register->getCountryList());
 <!-- icheck -->
 <link href="<?php echo BASE_URL; ?>assets/css/skins/all.css" rel="stylesheet">
 <link href="<?php echo BASE_URL; ?>assets/lib/select2/css/select2.min.css" rel="stylesheet">
-<link href="<?php echo BASE_URL; ?>assets/css/buttons.css" rel="stylesheet">
 <!-- aj dragable alert css-->
 <link href="<?php echo BASE_URL; ?>assets/js/plugins/jquery-confirm/jquery-confirm.min.css" rel="stylesheet">
 </head>
@@ -131,13 +132,13 @@ $countryList    = $register->jd($register->getCountryList());
                                         </div>
                                         <div class="form-group">
                                             <label for="dob">Date Of Birth<font color='red'>*</font></label>
-                                            <div class="input-group">
+                                            <div class="input-group date">
                                                 <span class="input-group-addon"><i class="fa fa-calendar glyphicon glyphicon-calendar"></i></span>
-                                                <input name="dob" class="form-control m-t-xxs" id="dob" placeholder="MM-DD-YY" type="text">
+                                                <input name="dob" class="form-control m-t-xxs" id="dob" placeholder="MM-DD-YY" type="date">
                                             </div>
                                             <!-- <label for="dob">Date Of Birth<font color='red'>*</font></label>
                                             <input name="dob" class="form-control m-t-xxs" id="dob" placeholder="MM-DD-YYYY" type="text"> -->
-                                        </div>
+                                       </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
                                             <input name="email" class="form-control m-t-xxs" id="email" placeholder="Enter Email" type="email">
@@ -146,6 +147,12 @@ $countryList    = $register->jd($register->getCountryList());
                                             <label for="contactno">Contact No<font color='red'>*</font></label>
                                             <input name="contactno" class="form-control m-t-xxs" id="contactno" placeholder="Enter Phone NO" type="text" onkeypress="return numcheck(event);">
                                         </div>
+                                        <!-- <div class="form-group">
+                                            &nbsp;
+                                        </div>
+                                        <div class="form-group">
+                                            &nbsp;
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -335,8 +342,12 @@ $countryList    = $register->jd($register->getCountryList());
 	<script src="<?php echo BASE_URL; ?>assets/js/vendor/icheck.js"></script>
 	<!-- bootstrap js -->
 	<script src="<?php echo BASE_URL; ?>assets/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/vendor/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/vendor/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
 	<!-- slimscroll js -->
 	<script src="<?php echo BASE_URL; ?>assets/js/vendor/jquery.slimscroll.js"></script>
+    <script src="<?php echo BASE_URL; ?>assets/js/vendor/moment.js"></script>
+    <script src="<?php echo BASE_URL; ?>assets/js/vendor/daterangepicker.js"></script>
 	<!-- pace js -->
 	<script src="<?php echo BASE_URL; ?>assets/js/vendor/pace/pace.min.js"></script>
 	<!-- Sparkline -->
@@ -353,5 +364,6 @@ $countryList    = $register->jd($register->getCountryList());
 
     <script src="<?php echo BASE_URL; ?>assets/js/common.js"></script>
     <script src="<?php echo BASE_URL; ?>assets/js/register.js"></script>
+    
 </body>
 </html>

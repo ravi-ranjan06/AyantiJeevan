@@ -133,5 +133,31 @@ function selectCity(val)
 
 function validateMe()
 {
-489375
+	if($('#sponsorid').val() == '')
+	{
+		$.alert({
+            title: 'ERROR!',
+            content: 'Sponsor Id can not be empty',
+            type: 'red',
+            animation: 'scale',
+            draggable: true,
+        });
+
+        $('#sponsorid').focus();
+        return false;
+	}
+
+	if($('#sponsorname').val() == '')
+	{
+		$.alert({
+            title: 'ERROR!',
+            content: 'Sponsor Id can not be empty',
+            type: 'red',
+            animation: 'scale',
+            draggable: true,
+        });
+
+        $('#sponsorname').focus();
+        return false;
+	}
 }
